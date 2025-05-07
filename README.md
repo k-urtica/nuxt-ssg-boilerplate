@@ -1,8 +1,8 @@
-# Nuxt SSG Boilerplate
+# Nuxt SSG Boilerplate ✨
 
-A simple and fast Nuxt Static Site Generator boilerplate.
+A simple and fast Nuxt Static Site Generator boilerplate. I use this setup frequently for my personal projects.
 
-## Features
+## ✅ Features
 
 - Static Site Generation (SSG) with [Nuxt 3](https://nuxt.com/)
 - Beautiful UI components with [Nuxt UI](https://ui.nuxt.com/)
@@ -12,7 +12,7 @@ A simple and fast Nuxt Static Site Generator boilerplate.
 - Modern ESLint configuration with Prettier integration
 - Type-safe code with TypeScript
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Framework**: [Nuxt 3](https://nuxt.com/)
 - **UI**: [Nuxt UI](https://ui.nuxt.com/) (TailwindCSS-based)
@@ -25,7 +25,7 @@ A simple and fast Nuxt Static Site Generator boilerplate.
 
 Easily extendable with [VueUse](https://vueuse.org/) or [Pinia](https://pinia.vuejs.org/) as needed.
 
-## Installation
+## 🚀 Installation
 
 ```bash
 # Clone the repository
@@ -36,14 +36,14 @@ cd nuxt-ssg-boilerplate
 pnpm install
 ```
 
-## Development
+## 💻 Development
 
 ```bash
 # Start development server (localhost:3000)
 pnpm dev
 ```
 
-## Build
+## 🏗️ Build
 
 ```bash
 # Generate static site
@@ -53,6 +53,6 @@ pnpm generate
 pnpm preview
 ```
 
-## License
+## 📄 License
 
 MIT
