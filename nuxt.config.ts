@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/ui',
     'motion-v/nuxt',
+    'nuxt-og-image',
   ],
 
   // $production: {
@@ -131,6 +132,12 @@ export default defineNuxtConfig({
       scan: true,
     },
     serverBundle: false,
+  },
+
+  ogImage: {
+    enabled: true,
+    fonts: ['Noto+Sans+JP:400', 'Noto+Sans+JP:700'],
+    zeroRuntime: true,
   },
 
   sitemap: {

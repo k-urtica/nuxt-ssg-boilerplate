@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import * as locales from '@nuxt/ui/locale';
 
+defineOgImageComponent('OgDefault');
+
 const { locale } = useI18n();
 
 const SITE_NAME = 'Nuxt SSG Boilerplate';

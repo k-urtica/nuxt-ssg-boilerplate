@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { motion } from 'motion-v';
 
+defineOgImageComponent('OgDefault', { showSiteName: false });
+
 useSeoMeta({
   titleTemplate: null,
 });
