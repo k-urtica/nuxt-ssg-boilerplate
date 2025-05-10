@@ -23,12 +23,10 @@ useHead({
   titleTemplate: '%s | ' + SITE_NAME,
   meta: () => [
     {
-      key: 'description',
       name: 'description',
       content: description,
     },
     {
-      key: 'og:description',
       property: 'og:description',
       content: description,
     },
