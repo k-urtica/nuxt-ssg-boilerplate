@@ -4,6 +4,8 @@ import * as locales from '@nuxt/ui/locale';
 defineOgImageComponent('OgDefault');
 
 const { locale } = useI18n();
+const route = useRoute();
+const siteConfig = useSiteConfig();
 
 const SITE_NAME = 'Nuxt SSG Boilerplate';
 const description = computed(() => $t('A simple and fast Nuxt SSG boilerplate.'));
@@ -25,6 +27,10 @@ useHead({
     {
       name: 'description',
       content: description,
+    },
+    {
+      property: 'og:url',
+      content: `${siteConfig.url}${route.path}`,
     },
     {
       property: 'og:description',
