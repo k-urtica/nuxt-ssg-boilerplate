@@ -91,7 +91,7 @@ export default defineNuxtConfig({
 
   eslint: {
     config: {
-      stylistic: false,
+      standalone: false,
       nuxt: {
         sortConfigKeys: true,
       },
