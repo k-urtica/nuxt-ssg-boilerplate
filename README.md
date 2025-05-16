@@ -9,7 +9,7 @@ A simple and fast Nuxt Static Site Generator boilerplate. I use this setup frequ
 - Internationalization ([i18n](https://i18n.nuxtjs.org/))
 - SEO optimization (meta tags, sitemap, robots.txt, og image)
 - Smooth animations with [motion-v](https://motion-v.io/)
-- Modern ESLint configuration with Prettier integration
+- Modern ESLint configuration
 - Type-safe code with TypeScript
 
 ## 🛠️ Tech Stack
@@ -20,18 +20,13 @@ A simple and fast Nuxt Static Site Generator boilerplate. I use this setup frequ
 - **SEO**: [@nuxtjs/sitemap](https://sitemap.nuxtjs.org/)
 - **Animation**: [motion-v](https://motion-v.io/)
 - **Package Manager**: [pnpm](https://pnpm.io/)
-- **Linter**: [eslint](https://eslint.org/)
-- **Formatter**: [prettier](https://prettier.io/)
+- **Lint and Format**: [eslint](https://eslint.org/)
 
 Easily extendable with [VueUse](https://vueuse.org/) or [Pinia](https://pinia.vuejs.org/) as needed.
 
 ## 🚀 Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/username/nuxt-ssg-boilerplate.git
-cd nuxt-ssg-boilerplate
-
 # Install dependencies
 pnpm install
 ```

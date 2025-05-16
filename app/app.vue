@@ -20,7 +20,7 @@ useHead({
     dir: () => locales[locale.value].dir,
   },
   title: SITE_NAME,
-  titleTemplate: '%s | ' + SITE_NAME,
+  titleTemplate: `%s | ${SITE_NAME}`,
   meta: () => [
     {
       name: 'description',
