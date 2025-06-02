@@ -1,6 +1,6 @@
 // @ts-check
 import antfu from '@antfu/eslint-config';
-import eslintPluginReadableTailwind from 'eslint-plugin-readable-tailwind';
+import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss';
 
 import withNuxt from './.nuxt/eslint.config.mjs';
 
@@ -41,19 +41,19 @@ export default withNuxt(
   }),
 )
   .append({
-    name: 'eslint-plugin-readable-tailwind',
+    name: 'eslint-plugin-better-tailwindcss',
     settings: {
-      'readable-tailwind': {
+      'better-tailwindcss': {
         entryPoint: 'app/assets/main.css',
       },
     },
     plugins: {
-      'readable-tailwind': eslintPluginReadableTailwind,
+      'better-tailwindcss': eslintPluginBetterTailwindcss,
     },
     rules: {
-      'readable-tailwind/multiline': 'off',
-      'readable-tailwind/no-duplicate-classes': 'error',
-      'readable-tailwind/no-unnecessary-whitespace': 'error',
-      'readable-tailwind/sort-classes': 'error',
+      'better-tailwindcss/multiline': 'off',
+      'better-tailwindcss/no-duplicate-classes': 'error',
+      'better-tailwindcss/no-unnecessary-whitespace': 'error',
+      'better-tailwindcss/sort-classes': 'error',
     },
   });
