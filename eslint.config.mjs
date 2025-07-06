@@ -29,6 +29,7 @@ export default withNuxt(
             'defineSlots',
           ],
         }],
+        'vue/max-attributes-per-line': ['error', { multiline: { max: 1 }, singleline: { max: 3 } }],
       },
     },
     rules: {
@@ -51,9 +52,10 @@ export default withNuxt(
       'better-tailwindcss': eslintPluginBetterTailwindcss,
     },
     rules: {
-      'better-tailwindcss/multiline': 'off',
+      'better-tailwindcss/enforce-consistent-class-order': 'error',
+      'better-tailwindcss/enforce-consistent-line-wrapping': 'off',
+      'better-tailwindcss/enforce-consistent-variable-syntax': ['error', { syntax: 'parentheses' }],
       'better-tailwindcss/no-duplicate-classes': 'error',
       'better-tailwindcss/no-unnecessary-whitespace': 'error',
-      'better-tailwindcss/sort-classes': 'error',
-    },
+    }
   });
