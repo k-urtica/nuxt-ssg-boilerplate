@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { motion } from 'motion-v';
 
-defineOgImageComponent('OgDefault', { showSiteName: false });
+defineOgImageComponent('OgDefault', {
+  showSiteName: false
+});
 
 useSeoMeta({
-  titleTemplate: null,
+  title: 'Nuxt SSG Boilerplate',
+  titleTemplate: '%s',
 });
 </script>
 

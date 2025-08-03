@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { motion } from 'motion-v';
 
+defineOgImageComponent('OgDefault');
+
 useSeoMeta({
-  title: $t('About'),
+  title: () => $t('About'),
 });
 </script>
 

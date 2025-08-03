@@ -1,16 +1,15 @@
 const SITE_NAME = 'Nuxt SSG Boilerplate';
+const SITE_DESCRIPTION = 'A simple and fast Nuxt SSG boilerplate.';
 const SITE_URL = 'https://example.com';
 
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
+    '@nuxtjs/seo',
     '@nuxt/eslint',
     '@nuxt/scripts',
     '@nuxt/ui',
     'motion-v/nuxt',
-    'nuxt-og-image',
   ],
 
   // $production: {
@@ -34,29 +33,8 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      htmlAttrs: {
-        lang: 'en',
-        prefix: 'og: http://ogp.me/ns#',
-      },
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { property: 'og:url', content: SITE_URL },
-        { property: 'og:type', content: 'website' },
-        { name: 'twitter:card', content: 'summary_large_image' },
-      ],
       link: [
-        {
-          rel: 'icon',
-          href: '/favicon.ico',
-          sizes: '48x48',
-        },
-        {
-          rel: 'icon',
-          href: '/favicon.svg',
-          sizes: 'any',
-          type: 'image/svg+xml',
-        },
+        { rel: 'icon', href: '/favicon.ico', sizes: '48x48' },
       ],
     },
   },
@@ -66,6 +44,7 @@ export default defineNuxtConfig({
   site: {
     name: SITE_NAME,
     url: SITE_URL,
+    description: SITE_DESCRIPTION,
   },
 
   ui: {
@@ -125,10 +104,23 @@ export default defineNuxtConfig({
     serverBundle: false,
   },
 
+  linkChecker: {
+    enabled: false
+  },
+
   ogImage: {
     enabled: true,
     fonts: ['Noto+Sans+JP:400', 'Noto+Sans+JP:700'],
     zeroRuntime: true,
+  },
+
+  seo: {
+    meta: {
+      author: 'K',
+      twitterCard: 'summary_large_image',
+      ogType: 'website',
+    },
+    metaDataFiles: true
   },
 
   sitemap: {
