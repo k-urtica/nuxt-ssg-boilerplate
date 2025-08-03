@@ -4,20 +4,20 @@ A simple and fast Nuxt Static Site Generator boilerplate. I use this setup frequ
 
 ## ✅ Features
 
-- Static Site Generation (SSG) with [Nuxt 3](https://nuxt.com/)
+- Static Site Generation (SSG) with [Nuxt 4](https://nuxt.com/)
 - Beautiful UI components with [Nuxt UI](https://ui.nuxt.com/)
 - Internationalization ([i18n](https://i18n.nuxtjs.org/))
-- SEO optimization (meta tags, sitemap, robots.txt, og image)
+- SEO optimization ([Nuxt SEO module](https://nuxtseo.com/))
 - Smooth animations with [motion-v](https://motion-v.io/)
 - Modern ESLint configuration
 - Type-safe code with TypeScript
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Nuxt 3](https://nuxt.com/)
+- **Framework**: [Nuxt 4](https://nuxt.com/)
 - **UI**: [Nuxt UI](https://ui.nuxt.com/) (TailwindCSS-based)
 - **Internationalization**: [@nuxtjs/i18n](https://i18n.nuxtjs.org/)
-- **SEO**: [@nuxtjs/sitemap](https://sitemap.nuxtjs.org/)
+- **SEO**: [Nuxt SEO](https://nuxtseo.com/)
 - **Animation**: [motion-v](https://motion-v.io/)
 - **Package Manager**: [pnpm](https://pnpm.io/)
 - **Lint and Format**: [eslint](https://eslint.org/)
